@@ -1,6 +1,7 @@
 # nodejs-crawler
 nodejs-koa2-爬虫练习
 
+
 ### Node required
 
 **node version >= 6.0**
@@ -8,6 +9,8 @@ nodejs-koa2-爬虫练习
 
 
 ### For development
+
+```bash
   # install eslint (optional)
   $npm install -g eslint eslint-plugin-standard eslint-config-standard eslint-plugin-promise babel-eslint
 
@@ -20,5 +23,6 @@ nodejs-koa2-爬虫练习
   # run and watch
   $npm run watch
 
-
-
+  # build
+  $npm run build
+```
