@@ -1,0 +1,40 @@
+{
+  "name": "koa-next-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec babel-node -- ./src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.oschina.net:hwhao/koa-next-api.git"
+  },
+  "author": "hwhao",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "eventproxy": "^0.3.5",
+    "kcors": "^2.1.1",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-jwt": "^2.0.1",
+    "koa-logger": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-validate": "^1.0.6",
+    "log4js": "^0.6.38",
+    "mongoose": "^4.5.8",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "superagent": "^3.1.0",
+    "superagent-charset": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-stage-3": "^6.11.0"
+  }
+}
