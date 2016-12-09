@@ -51,9 +51,10 @@ module.exports = function (router) {
 
     for (let i = 0; i < hrefs.length; i++) {
       let url = 'http://www.dytt8.net/' + hrefs[i]
-      let detail = await rq.get(url).charset('gb2312')
-      console.log('fetch ' + url + ' successful')
-      ep.emit('hello', [url, detail.text])
+      rq.get(url).charset('gb2312').end((err, detail) => {
+        console.log('fetch ' + url + ' successful')
+        ep.emit('hello', [url, detail.text])
+      })
     }
     ctx.success()
   })
